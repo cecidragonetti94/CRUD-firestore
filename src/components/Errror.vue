@@ -12,7 +12,14 @@
 </template>
 
 <script>
-export default {};
+import {inject} from 'vue'
+export default {
+  setup() {
+    const error = inject('error')
+    return {error}
+    
+  }
+};
 </script>
 
 <style>
